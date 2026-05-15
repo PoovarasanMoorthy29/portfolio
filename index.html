@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Poovarasan M - Full Stack Developer | Java Developer | Web Developer Portfolio">
+    <meta name="keywords" content="Poovarasan, Full Stack Developer, Java Developer, Web Developer, Portfolio">
+    <meta name="author" content="Poovarasan M">
+    <meta property="og:title" content="Poovarasan M - Full Stack Developer Portfolio">
+    <meta property="og:description" content="Professional portfolio showcasing projects, skills, and experience as a full-stack developer.">
+    <meta property="og:type" content="website">
+    
+    <title>Poovarasan M - Full Stack Developer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles" class="particles"></div>
+    
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo/Brand -->
+            <div class="nav-brand">
+                
+                <span class="brand-text">Poovarasan</span>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- ============ HERO SECTION ============ -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <!-- Profile Image -->
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="image-border"></div>
+                    <img src="assets/profile.png" alt="Poovarasan M" class="profile-img">
+                </div>
+            </div>
+            
+            <!-- Hero Text -->
+            <div class="hero-text">
+                <div class="greeting">
+                    <span class="wave">👋</span>
+                    <span>Hello, I'm</span>
+                </div>
+                <h1 class="hero-name">Poovarasan M</h1>
+                
+                <!-- Typing Animation for Roles -->
+                <div class="role-container">
+                    <span class="role-text">I'm a </span>
+                    <span class="typed-text" id="typedText"></span>
+                    <span class="cursor"></span>
+                </div>
+                
+                <!-- Introduction -->
+                <p class="hero-intro">
+                    Passionate Full Stack Developer focused on building scalable web applications and solving real-world problems using modern technologies.
+                </p>
+                
+                <!-- CTA Buttons -->
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="assets/Poovarasan's Resume.pdf" download class="btn btn-secondary" target="_blank">
+                        <i class="fas fa-download"></i>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+                
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="https://github.com/PoovarasanMoorthy29" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="www.linkedin.com/in/poovarasanmoorthy290504 target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:poovarasanmoorthy375@gmail.com" class="social-icon" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+917604875372" class="social-icon" title="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+                
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <span>Scroll to explore</span>
+                    <div class="mouse">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============ ABOUT SECTION ============ -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        I'm a passionate full-stack developer with a fresh perspective on solving real-world problems through code. 
+                        Recently completing my Bachelor's degree in Information Technology, I'm eager to apply my technical knowledge 
+                        and creativity to build scalable web applications that make a difference.
+                    </p>
+                    
+                    <p class="about-paragraph">
+                        My journey in software development has equipped me with strong problem-solving skills and a deep appreciation 
+                        for clean, efficient code. I specialize in full-stack development, with expertise in Java backend development 
+                        and modern web technologies. I'm a quick learner who thrives in collaborative environments and is always 
+                        excited to embrace new technologies and best practices.
+                    </p>
+                    
+                    <p class="about-paragraph">
+                        Beyond web development, I have a keen interest in AI projects and data science applications. I believe in 
+                        continuous learning and am committed to delivering high-quality solutions that combine technical excellence 
+                        with user-centered design.
+                    </p>
+                    
+                    <!-- Key Highlights -->
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Full Stack Development Expertise</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Strong Problem-Solving Skills</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Quick Learner & Team Player</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Passion for Scalable Solutions</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- About Image/Stats -->
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Technologies Mastered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Dedication to Quality</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============ EDUCATION SECTION ============ -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="education-timeline">
+                <!-- Bachelor's Degree -->
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 class="education-title">B.Tech - Information Technology</h3>
+                        <p class="education-institution">Kingston Engineering College</p>
+                        <p class="education-duration">Graduation: 2024</p>
+                        <p class="education-gpa"><strong>CGPA: 7.89 / 10</strong></p>
+                    </div>
+                </div>
+                
+                <!-- HSC -->
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 class="education-title">Higher Secondary Certificate (HSC)</h3>
+                        <p class="education-institution">12th Grade</p>
+                        <p class="education-duration">2020</p>
+                        <p class="education-gpa"><strong>Percentage: 80.9%</strong></p>
+                    </div>
+                </div>
+                
+                <!-- SSLC -->
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 class="education-title">Secondary School Leaving Certificate (SSLC)</h3>
+                        <p class="education-institution">10th Grade</p>
+                        <p class="education-duration">2018</p>
+                        <p class="education-gpa"><strong>Percentage: 76%</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============ EXPERIENCE SECTION ============ -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="experience-card gradient-card">
+                <div class="experience-header">
+                    <div class="experience-title-section">
+                        <h3 class="experience-position">Graduate Trainee</h3>
+                        <p class="experience-company">
+                            <i class="fas fa-building"></i>
+                            Zoho Corporation
+                        </p>
+                    </div>
+                    <div class="experience-period">
+                        <span class="badge">Current</span>
+                    </div>
+                </div>
+                
+                <ul class="experience-points">
+                    <li>Working on web development and software engineering concepts to build robust applications</li>
+                    <li>Learning scalable application development practices and design patterns</li>
+                    <li>Improving problem-solving and coding skills through real-world project exposure</li>
+                    <li>Collaborating in a professional development environment with experienced engineers</li>
+                    <li>Contributing to code reviews and maintaining code quality standards</li>
+                </ul>
+                
+                <div class="experience-skills">
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Web Development</span>
+                    <span class="skill-tag">Software Engineering</span>
+                    <span class="skill-tag">Problem Solving</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============ SKILLS SECTION ============ -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Frontend Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Backend Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend Development</h3>
+                    </div>
+                    
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JDBC</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Technologies -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Technologies</h3>
+                    </div>
+                    
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Git & GitHub</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">VS Code</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============ PROJECTS SECTION ============ -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: Brain Stroke Prediction -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/flowerdesk.png" alt="flowerdesk2.0">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/PoovarasanMoorthy29/FlowerDesk2_0" target="_blank" class="project-link" title="GitHub Repository">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">FlowerDesk 2.0</h3>
+                        <p class="project-description">
+                            FlowerDesk is an MVC-based Java console application for IT ticket management. 
+                            It features role-based access for users and technicians, 
+                            secure authentication, and optimized data handling using collections and DTOs.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">JDBC</span>
+                            <span class="tag">IT HelpDesk</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/ToDolist.png" alt="Termido">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/PoovarasanMoorthy29/Termido" target="_blank" class="project-link" title="GitHub Repository">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Termido</h3>
+                        <p class="project-description">
+                           Termido is a Java-based console Todo application built using the Model-View-Presenter (MVP) pattern. It allows users to efficiently manage 
+                           tasks via a command-line interface, emphasizing clean code separation and structured logic.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">To-Do list</span>
+                        </div>
+                    </div>
+                </div>
+                
+               
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/BookBazzar.png" alt="BookBazzar">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/PoovarasanMoorthy29/BookBazzar" target="_blank" class="project-link" title="GitHub Repository">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">BookBazzar</h3>
+                        <p class="project-description">
+                           BookBazzar is a Java console application for a role-based online book marketplace. It features Admin, Seller, and Buyer workflows including inventory management, 
+                           searching, cart/checkout, and order tracking using in-memory storage.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">console application</span>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============ CONTACT SECTION ============ -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Let's collaborate and build something amazing together!</p>
+            </div>
+            
+            <div class="contact-content">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <a href="mailto:poovarasanmoorthy375@gmail.com">poovarasanmoorthy375@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Phone</h3>
+                            <a href="tel:+919876543210">+91 7604875372</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Location</h3>
+                            <p>Vellore, Tamil Nadu, India</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" id="name" required>
+                        <div class="form-line"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" id="email" required>
+                        <div class="form-line"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" id="subject" required>
+                        <div class="form-line"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" id="message" rows="5" required></textarea>
+                        <div class="form-line"></div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="contact-socials">
+                <a href="https://github.com/PoovarasanMoorthy29" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="www.linkedin.com/in/poovarasanmoorthy290504" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                    LinkedIn
+                </a>
+                <a href="mailto:poovarasanmoorthy375@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                    Email
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Poovarasan M. All rights reserved.</p>
+                    <p class="footer-credit">Designed & Developed with <i class="fas fa-heart"></i> by Poovarasan M</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

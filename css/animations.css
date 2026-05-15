@@ -1,0 +1,505 @@
+/* ============================================
+   ANIMATIONS CSS
+   ============================================ */
+
+/* ============ KEYFRAME ANIMATIONS ============ */
+
+/* Float Animation for Background Blob */
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(30px, -50px);
+    }
+    50% {
+        transform: translate(-60px, 0);
+    }
+    75% {
+        transform: translate(30px, 50px);
+    }
+}
+
+/* Rotate Animation for Image Border */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Wave Animation for Greeting Emoji */
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Blink Animation for Cursor */
+@keyframes blink {
+    0%, 49% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Scroll Animation for Mouse Wheel */
+@keyframes scroll {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Left Animation */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade In Right Animation */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade In Scale Animation */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Glow Animation */
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(0, 212, 255, 0.6);
+    }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Slide Down Animation */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Shimmer Animation for Loading */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+/* ============ ELEMENT ANIMATIONS ============ */
+
+/* Navbar Animation */
+.navbar {
+    animation: slideDown 0.5s ease-out;
+}
+
+/* Brand Animation */
+.nav-brand {
+    animation: fadeInLeft 0.8s ease-out;
+}
+
+/* Nav Links Animation */
+.nav-link {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.nav-links li:nth-child(1) { animation-delay: 0s; }
+.nav-links li:nth-child(2) { animation-delay: 0.1s; }
+.nav-links li:nth-child(3) { animation-delay: 0.2s; }
+.nav-links li:nth-child(4) { animation-delay: 0.3s; }
+.nav-links li:nth-child(5) { animation-delay: 0.4s; }
+.nav-links li:nth-child(6) { animation-delay: 0.5s; }
+.nav-links li:nth-child(7) { animation-delay: 0.6s; }
+
+/* Hero Section Animations */
+.hero-image {
+    animation: fadeInRight 1s ease-out;
+}
+
+.greeting {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-name {
+    animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.role-container {
+    animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.hero-intro {
+    animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.hero-buttons {
+    animation: fadeInUp 1s ease-out 0.8s both;
+}
+
+.social-icons {
+    animation: fadeInUp 1s ease-out 1s both;
+}
+
+/* Section Content Animations */
+.section-header {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.section-title {
+    animation: fadeInScale 0.8s ease-out;
+}
+
+.title-underline {
+    animation: slideDown 0.8s ease-out 0.3s both;
+}
+
+/* About Section */
+.about-text {
+    animation: fadeInLeft 0.8s ease-out;
+}
+
+.about-paragraph {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.about-paragraph:nth-child(1) { animation-delay: 0.2s; }
+.about-paragraph:nth-child(2) { animation-delay: 0.3s; }
+.about-paragraph:nth-child(3) { animation-delay: 0.4s; }
+
+.about-highlights {
+    animation: fadeInLeft 0.8s ease-out 0.5s both;
+}
+
+.highlight-item {
+    animation: fadeInScale 0.6s ease-out;
+}
+
+.highlight-item:nth-child(1) { animation-delay: 0.6s; }
+.highlight-item:nth-child(2) { animation-delay: 0.7s; }
+.highlight-item:nth-child(3) { animation-delay: 0.8s; }
+.highlight-item:nth-child(4) { animation-delay: 0.9s; }
+
+.about-stats {
+    animation: fadeInRight 0.8s ease-out 0.5s both;
+}
+
+.stat-card {
+    animation: fadeInScale 0.6s ease-out;
+}
+
+.stat-card:nth-child(1) { animation-delay: 0.6s; }
+.stat-card:nth-child(2) { animation-delay: 0.7s; }
+.stat-card:nth-child(3) { animation-delay: 0.8s; }
+
+/* Education Section */
+.education-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.education-card:nth-child(1) { animation-delay: 0.2s; }
+.education-card:nth-child(2) { animation-delay: 0.3s; }
+.education-card:nth-child(3) { animation-delay: 0.4s; }
+
+/* Experience Section */
+.experience-card {
+    animation: fadeInScale 0.8s ease-out 0.3s both;
+}
+
+/* Skills Section */
+.skill-category {
+    animation: fadeInScale 0.6s ease-out;
+}
+
+.skill-category:nth-child(1) { animation-delay: 0.2s; }
+.skill-category:nth-child(2) { animation-delay: 0.3s; }
+.skill-category:nth-child(3) { animation-delay: 0.4s; }
+
+.skill-item {
+    animation: fadeInUp 0.4s ease-out;
+}
+
+.skill-item:nth-child(1) { animation-delay: 0.1s; }
+.skill-item:nth-child(2) { animation-delay: 0.2s; }
+.skill-item:nth-child(3) { animation-delay: 0.3s; }
+
+/* Projects Section */
+.project-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.project-card:nth-child(1) { animation-delay: 0.2s; }
+.project-card:nth-child(2) { animation-delay: 0.3s; }
+.project-card:nth-child(3) { animation-delay: 0.4s; }
+
+/* Contact Section */
+.info-card {
+    animation: fadeInLeft 0.6s ease-out;
+}
+
+.info-card:nth-child(1) { animation-delay: 0.2s; }
+.info-card:nth-child(2) { animation-delay: 0.3s; }
+.info-card:nth-child(3) { animation-delay: 0.4s; }
+
+.contact-form {
+    animation: fadeInRight 0.6s ease-out 0.3s both;
+}
+
+/* Footer */
+.footer {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* ============ SCROLL ANIMATIONS ============ */
+
+/* Reveal on Scroll Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Staggered Reveal */
+.reveal-stagger {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.reveal-stagger.active {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.reveal-stagger:nth-child(1) { animation-delay: 0s; }
+.reveal-stagger:nth-child(2) { animation-delay: 0.1s; }
+.reveal-stagger:nth-child(3) { animation-delay: 0.2s; }
+.reveal-stagger:nth-child(4) { animation-delay: 0.3s; }
+.reveal-stagger:nth-child(5) { animation-delay: 0.4s; }
+.reveal-stagger:nth-child(6) { animation-delay: 0.5s; }
+
+/* ============ HOVER ANIMATIONS ============ */
+
+/* Button Hover Effect */
+.btn:hover {
+    animation: pulse 0.6s ease-in-out;
+}
+
+/* Card Hover Lift */
+.project-card:hover,
+.stat-card:hover,
+.skill-category:hover {
+    animation: none;
+}
+
+/* Icon Bounce */
+.social-icon:hover {
+    animation: bounce 0.6s ease-out;
+}
+
+/* Progress Bar Fill */
+.progress-fill {
+    animation: none;
+}
+
+.progress-fill.animate {
+    animation: slideDown 0s ease-out;
+}
+
+/* ============ PAGE LOAD ANIMATIONS ============ */
+
+/* Full Page Load Sequence */
+@keyframes pageLoad {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body.page-load {
+    animation: pageLoad 0.3s ease-out;
+}
+
+/* ============ TYPING ANIMATION ============ */
+
+@keyframes typing {
+    0% {
+        width: 0;
+        border-right: 2px solid var(--accent-primary);
+    }
+    100% {
+        width: 100%;
+        border-right: 2px solid var(--accent-primary);
+    }
+}
+
+.typing {
+    animation: typing 0.5s steps(30, end);
+}
+
+/* ============ MEDIA QUERY ANIMATIONS ============ */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Tablet Animations */
+@media (max-width: 768px) {
+    .hero-content {
+        animation: fadeInScale 0.8s ease-out;
+    }
+    
+    .nav-links.active li {
+        animation: slideDown 0.3s ease-out;
+    }
+}
+
+/* Mobile Animations */
+@media (max-width: 480px) {
+    .hero-name {
+        font-size: 2rem;
+        animation: fadeInUp 1s ease-out 0.2s both;
+    }
+    
+    .social-icons {
+        animation: none;
+        gap: var(--spacing-sm);
+    }
+    
+    .section-title {
+        animation: fadeInScale 0.6s ease-out;
+    }
+}
+
+/* ============ PARALLAX-LIKE EFFECTS ============ */
+
+@keyframes moveUpSlow {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.parallax-element {
+    animation: moveUpSlow 1s ease-out forwards;
+}
+
+/* ============ GRADIENT ANIMATIONS ============ */
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gradient-animated {
+    background-size: 200% 200%;
+    animation: gradientShift 6s ease infinite;
+}
